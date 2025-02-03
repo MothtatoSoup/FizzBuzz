@@ -5,11 +5,11 @@ const userResults = document.getElementById("result");
 console.log("Defined Variables")
 let output;
 // Add the first line of the event listener to handle form submission
-document.getElementById("Button").addEventListener("onClick", function (x) {
-     Event.preventDefault();  // Prevent the form from refershing the page
+document.getElementById("Button").addEventListener("click", function (x) {
+     event.preventDefault();  // Prevent the form from refershing the page
      console.log("Event works")
      // Get the number from the form input
-     x = userInput.value();
+     x = userInput.value;
      console.log("Defined let vars")
      //FizzBuzz code
      if(x % 3 == 0 && x % 5 == 0){
@@ -24,8 +24,7 @@ document.getElementById("Button").addEventListener("onClick", function (x) {
      } else{
            console.log(x);
            output = "x";
-      }
-          
+     }
+     document.getElementById("result").textContent = output;
 })
 console.log("End of loop")
-userResults.textContent = output;
