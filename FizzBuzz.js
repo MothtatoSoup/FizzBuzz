@@ -23,7 +23,7 @@ document.getElementById("Button").addEventListener("click", function (x) {
            output = "Buzz";
      } else{
            console.log(x);
-           output = "x";
+           output = x;
      }
      document.getElementById("result").textContent = output;
 })
